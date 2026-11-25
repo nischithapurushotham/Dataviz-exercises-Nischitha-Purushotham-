@@ -14,8 +14,7 @@ st.caption("Source: World Happiness Report 2023 | Kaggle")
 # Data ingestion
 # Path is built relative to this file so it works both locally and on Streamlit Cloud.
 # Adjust if your CSV lives somewhere else in your repo.
-DATA_PATH = Path(__file__).parent.parent / "data" / "world_happiness_2023.csv"
-
+DATA_PATH = Path(__file__).parent / "world_happiness_2023.csv"
 
 @st.cache_data
 def load_data(path):
